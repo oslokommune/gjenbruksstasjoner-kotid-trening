@@ -1,0 +1,6 @@
+.venv/
+*.bin
+*.png
+results.csv
+cropped_images/
+__pycache__
