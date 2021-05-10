@@ -28,6 +28,3 @@ The metrics for the various models can be measured on the `test` data set. This 
 
 Run `python3 evaluate_models.py`. 
 
-## Development testing
-Some tests have been implemented using Pytest. Run `pytest` to execute these.  
-For further development, it is highly recommended to add more tests.  

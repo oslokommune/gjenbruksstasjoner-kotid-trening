@@ -665,21 +665,21 @@ if __name__ == "__main__":
     """
 
     # Virker (2021-04-30)
-    # eval_cfg = [{"evaluate_how": "show_on_images",
-    #             "target_variables": ["queue_end_pos"]}]
+    eval_cfg = [{"evaluate_how": "show_on_images",
+                "target_variables": ["queue_end_pos"]}]
 
     # Virker (2021-04-20)
     # eval_cfg = [{"evaluate_how": "with_residuals",
-    #             "target_variables": ["queue_end_pos"]}]
+    #              "target_variables": ["queue_end_pos"]}]
 
     # Virker (2021-04-20)
     # eval_cfg = [{"evaluate_how": "with_confusion_matrix",
     #             "target_variables": ["queue_full"]}]
 
     # Virker (2021-04-20)
-    eval_cfg = [{"evaluate_how": "with_confusion_matrix",
-                 "target_variables": ["lanes"],
-                 "files": "min_predictions"}]
+    # eval_cfg = [{"evaluate_how": "with_confusion_matrix",
+    #              "target_variables": ["lanes"],
+    #              "files": "min_predictions"}]
 
     # Virker (2021-04-20)
     # eval_cfg = [

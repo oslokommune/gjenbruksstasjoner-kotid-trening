@@ -362,14 +362,14 @@ if __name__ == "__main__":
             "target_variable": "queue_full",
         }  # Binary
 
-    if False:  # End of Queue
-        epochs = 50
+    if True:  # End of Queue
+        epochs = 30  # 50 is better
         cfg = {
             "model_file_name": "CNN_EoQ_VGG16_noaug_weighted_{0}.h5".format(dt),
             "target_variable": "queue_end_pos",
         }  # Continuous
 
-    if True:  # Lanes
+    if False:  # Lanes
         epochs = 20
         cfg = {
             "model_file_name": "CNN_Lanes_VGG16_weighted_{0}.h5".format(dt),
