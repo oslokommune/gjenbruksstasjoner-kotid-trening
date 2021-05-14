@@ -363,7 +363,7 @@ if __name__ == "__main__":
         }  # Binary
 
     if True:  # End of Queue
-        epochs = 30  # 50 is better
+        epochs = 50  # 50 is better
         cfg = {
             "model_file_name": "CNN_EoQ_VGG16_noaug_weighted_{0}.h5".format(dt),
             "target_variable": "queue_end_pos",
