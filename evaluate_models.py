@@ -561,15 +561,16 @@ def get_results(
             r.set_results(get_y_data(LABELS_FILENAME, filenames, target_variable))
             results.append(r)
 
+            TO_BE_EVALUATED = "CNN_EoQ_VGG16_noaug_weighted_20210514.h5"
             r = Series_y(
-                "CNN_EoQ_VGG16_noaug_weighted_20210408.h5",
+                TO_BE_EVALUATED,
                 False,
                 MODEL1_COL,
                 target_variable,
             )
             r.set_results(
                 VGG16_predict(
-                    r"CNN_EoQ_VGG16_noaug_weighted_20210408.h5",
+                    TO_BE_EVALUATED,
                     xd_preconv,
                     filenames,
                     target_variable,
@@ -665,12 +666,12 @@ if __name__ == "__main__":
     """
 
     # Virker (2021-04-30)
-    eval_cfg = [{"evaluate_how": "show_on_images",
-                "target_variables": ["queue_end_pos"]}]
+    # eval_cfg = [{"evaluate_how": "show_on_images",
+    #             "target_variables": ["queue_end_pos"]}]
 
     # Virker (2021-04-20)
-    # eval_cfg = [{"evaluate_how": "with_residuals",
-    #              "target_variables": ["queue_end_pos"]}]
+    eval_cfg = [{"evaluate_how": "with_residuals",
+                 "target_variables": ["queue_end_pos"]}]
 
     # Virker (2021-04-20)
     # eval_cfg = [{"evaluate_how": "with_confusion_matrix",
